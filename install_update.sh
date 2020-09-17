@@ -2,7 +2,7 @@
 echo "#!/bin/bash" > ~/update.sh
 echo 'echo "running update..."' >> ~/update.sh
 echo '# intenzionale 2 volte "apt-get autoremove -y"' >> ~/update.sh
-echo "dpkg --configure -a && apt-get install -f && apt-get autoremove -y && apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y && apt-get autoclean -y" >> ~/update.sh
+echo "dpkg --configure -a && apt-get install -f && apt-get --purge autoremove && apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y && apt-get autoclean -y" >> ~/update.sh
 echo 'echo "end update."' >> ~/update.sh
 sudo mv ~/update.sh /usr/bin
 sudo chmod +x /usr/bin/update.sh
