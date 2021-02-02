@@ -1,6 +1,6 @@
 
 echo "\nNON USARE SUDO - solo: sh vbox.sh\n"
+echo "\nSE NON FUNZIONA, FAI CLICK SUL VBox_GAs* \n"
 u="$USER"
-sudo cp /media/$u/VBox_GAs*/VBoxLinuxAdditions.run ~/
-sudo sh /home/$u/VBoxLinuxAdditions.run
-sudo rm  ~/VBoxLinuxAdditions.run
+sudo sh /media/$u/VBox_GAs*/VBoxLinuxAdditions.run
+
