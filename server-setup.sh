@@ -1,2 +1,2 @@
 
-apt list
+sudo apt update
