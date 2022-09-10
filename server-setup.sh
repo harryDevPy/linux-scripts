@@ -1,2 +1,2 @@
 
-echo "hello"
+apt list
